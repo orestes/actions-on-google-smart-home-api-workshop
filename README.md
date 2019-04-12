@@ -1,18 +1,18 @@
-# Initial page
+# Página inicial
 
-## Getting Super Powers
+## Consiguiendo super poderes
 
-Becoming a super hero is a fairly straight forward process:
+Convertirse en superhéroe es un proceso bastante sencillo:
 
 ```
 $ give me super-powers
 ```
 
 {% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
+ Los superpoderes se conceden aleatoriamente. Por favor, abre una incidencia si no estás satisfecho/a con los tuyos.
 {% endhint %}
 
-Once you're strong enough, save the world:
+Cuando seas suficientemente fuerte, salva al mundo:
 
 ```
 // Ain't no code for that yet, sorry

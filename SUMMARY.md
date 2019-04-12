@@ -1,4 +1,4 @@
-# Table of contents
+# Índice
 
-* [Initial page](README.md)
+* [Página inicial](README.md)
 
