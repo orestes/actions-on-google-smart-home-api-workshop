@@ -13,5 +13,5 @@
 
 ## Info
 
-- [FAQ](faq.md)
-- [About](about.md)
+- [FAQ](info/faq.md)
+- [About](info/about.md)
