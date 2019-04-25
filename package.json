@@ -1,0 +1,44 @@
+{
+  "name": "actions-on-google-smart-home-api-workshop",
+  "description": "Actions on Google Smart Home API workshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Orestes Carracedo <orestes@orestes.io>",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "actions",
+    "aog",
+    "smart home",
+    "google",
+    "assistant"
+  ],
+  "homepage": "https://github.com/orestes/actions-on-google-smart-home-api-workshop#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orestes/actions-on-google-smart-home-api-workshop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/orestes/actions-on-google-smart-home-api-workshop/issues"
+  },
+  "scripts": {
+    "reformat": "prettier chapters/**/*.md --write --parser  markdown",
+    "cz": "git-cz"
+  },
+  "husky": {
+    "hooks": {
+      "pre-cz": "reformat"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "commitizen": "^3.1.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^2.1.0",
+    "prettier": "^1.17.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
