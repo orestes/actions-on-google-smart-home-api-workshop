@@ -21,7 +21,7 @@
     "url": "https://github.com/orestes/actions-on-google-smart-home-api-workshop/issues"
   },
   "scripts": {
-    "reformat": "prettier chapters/**/*.md --write --parser  markdown",
+    "reformat": "prettier src/chapters/**/*.md --write --parser  markdown",
     "cz": "git-cz"
   },
   "husky": {
