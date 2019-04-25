@@ -1,3 +1,7 @@
+---
+description: Setting up our database
+---
+
 # Firebase
 
 Firebase is a cloud platform from Google. It's built on top of Google Cloud

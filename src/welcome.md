@@ -1,3 +1,7 @@
+---
+description: How to follow this workshop
+---
+
 # Welcome
 
 ## Objective

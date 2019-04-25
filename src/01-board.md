@@ -1,3 +1,7 @@
+---
+description: Setting up the components for our IoT project
+---
+
 # Board
 
 ## LOLIN D1 mini pro

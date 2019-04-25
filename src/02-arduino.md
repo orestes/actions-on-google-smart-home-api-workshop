@@ -1,6 +1,12 @@
-# Arduino Setup
+---
+description: Setting up our environment
+---
 
-### Install Arduino IDE
+# Arduino
+
+We'll be using the Arduino platform and IDE to write our code
+
+# Install Arduino IDE
 
 Download and install the Arduino IDE.
 

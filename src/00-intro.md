@@ -1,3 +1,7 @@
+---
+description: What to expect from this workshop
+---
+
 # Intro
 
 ## What we are going to do
