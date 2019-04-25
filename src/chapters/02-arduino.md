@@ -40,7 +40,7 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 0. Open the Arduino IDE preferences
 1. In the `Additional Boards Manager URLs`
 
-![](assets/arduino-boards.png)
+![](../assets/arduino-boards.png)
 
 ### Install libraries
 

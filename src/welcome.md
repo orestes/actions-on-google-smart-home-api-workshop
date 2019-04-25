@@ -4,6 +4,8 @@ description: How to follow this workshop
 
 # Welcome
 
+Thank you for joining our workshop today. Let's get started!
+
 ## Objective
 
 In this workshop we will learn how to create our own Smart RGB light bulb that
@@ -19,11 +21,5 @@ have learned:
 - How to set up an API integration with the Smart Home API from Actions on
   Google
 
-## Requisites
-
-- Hardware
-- Node.js familiarity
-- Google Account
-
 {% hint style="info" %} You need some hardware to follow along. Check out the
-[components list](src/chapters/00-components.md). {% endhint %}
+[components list](requisites.md). {% endhint %}

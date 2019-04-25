@@ -50,7 +50,7 @@ JSON below, or just use the **import JSON** command on the options menu
 
 Once you seed the data, your database should look like this.
 
-![](assets/firebase-data.png)
+![](../assets/firebase-data.png)
 
 Database seed
 
