@@ -22,4 +22,4 @@ have learned:
   Google
 
 {% hint style="info" %} You need some hardware to follow along. Check out the
-[components list](requisites.md). {% endhint %}
+[components list](src/preparation/requisites.md). {% endhint %}

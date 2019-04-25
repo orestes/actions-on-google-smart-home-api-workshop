@@ -1,4 +1,1 @@
 root: ./src
-
-structure:
-  readme: welcome.md

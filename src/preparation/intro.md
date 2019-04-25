@@ -12,4 +12,4 @@ the Firebase Realtime Database.
 
 ## Expected result
 
-![](assets/result.png)
+![](../assets/result.png)
