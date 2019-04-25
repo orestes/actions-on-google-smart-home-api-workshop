@@ -2,12 +2,24 @@
 
 ### Install Arduino IDE
 
+Download and install the Arduino IDE.
+
+{% tabs name="Windows", type="markdown" -%}
+
 - [Windows](https://www.arduino.cc/download_handler.php?f=/arduino-1.8.9-windows.exe)
-- [Mac OS X](https://www.arduino.cc/download_handler.php?f=/arduino-1.8.9-macosx.zip)
+
+{%- tab name="Linux", type="markdown" -%}
+
 - [Linux 32 bits](https://www.arduino.cc/download_handler.php?f=/arduino-1.8.9-linux32.tar.xz)
 - [Linux 64 bits](https://www.arduino.cc/download_handler.php?f=/arduino-1.8.9-linux64.tar.xz)
 - [Linux ARM 32 bits](https://www.arduino.cc/download_handler.php?f=/arduino-1.8.9-linuxarm.tar.xz)
 - [Linux 64 bits](https://www.arduino.cc/download_handler.php?f=/arduino-1.8.9-linuxaarch64.tar.xz)
+
+{%- tab name="Mac OS X", type="markdown" -%}
+
+- [Mac OS X](https://www.arduino.cc/download_handler.php?f=/arduino-1.8.9-macosx.zip)
+
+{%- endtabs %}
 
 ### Install esp8266 boards definition
 
