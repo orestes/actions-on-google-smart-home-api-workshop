@@ -6,4 +6,4 @@ Realtime Database.
 
 ## Result
 
-![](../assets/result.png)
+![](assets/result.png)
