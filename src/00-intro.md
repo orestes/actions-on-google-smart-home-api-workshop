@@ -1,9 +1,11 @@
-# What we're going to do
+# Intro
 
-Build an Arduino project that mimics a Smart RGB Light Bulb. The project will
-connect to the internet on its own and get its configuration from the Firebase
-Realtime Database.
+## What we are going to do
 
-## Result
+We are going to build an Arduino project that mimics a Smart RGB Light Bulb. The
+project will connect to the internet on its own and get its configuration from
+the Firebase Realtime Database.
+
+## Expected result
 
 ![](assets/result.png)

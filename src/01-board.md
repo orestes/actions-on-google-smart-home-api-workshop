@@ -1,4 +1,8 @@
-# LOLIN D1 mini pro setup
+# Board
+
+## LOLIN D1 mini pro
+
+A very cheap and useful esp8266/-based board
 
 ## Drivers
 
