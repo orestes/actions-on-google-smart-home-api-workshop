@@ -27,6 +27,10 @@ We are going to create a data structure that holds the state representation for
 our smart light bulb. We can create the properties one by one to reflect the
 JSON below, or just use the **import JSON** command on the options menu
 
+
+{% code-tabs %}
+{% code-tabs-item title="database.json" %}
+
 ```json
 {
   "devices": {
@@ -47,6 +51,8 @@ JSON below, or just use the **import JSON** command on the options menu
   }
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 Once you seed the data, your database should look like this.
 
