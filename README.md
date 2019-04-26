@@ -6,6 +6,12 @@ description: How to follow this workshop
 
 Thank you for joining our workshop today. Let's get started!
 
+## Select your language
+
+{% hint style="info" %}
+### Este taller tambiñen está disponible [🇪🇸 en Español](https://app.gitbook.com/@orestes/s/actions-on-google-smart-home-api-workshop/v/spanish)
+{% endhint %}
+
 ## Objective
 
 In this workshop we will learn how to create our own Smart RGB light bulb that
