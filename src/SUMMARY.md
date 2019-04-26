@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](preparation/intro.md)
+* [Introduction](preparation/introduction.md)
 * [Requisites](preparation/requisites.md)
 
 ## Workshop

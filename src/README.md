@@ -2,6 +2,8 @@
 description: How to follow this workshop
 ---
 
+# Get started
+
 ## Select your language
 
 {% hint style="info" %}

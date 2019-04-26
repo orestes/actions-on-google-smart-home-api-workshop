@@ -2,7 +2,7 @@
 description: What to expect from this workshop
 ---
 
-# Intro
+# Introduction
 
 ## What we are going to do
 
