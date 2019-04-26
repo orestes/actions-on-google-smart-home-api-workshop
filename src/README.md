@@ -4,13 +4,13 @@ description: How to follow this workshop
 
 # Welcome
 
-## Select your language
+### Select your language
 
 {% hint style="info" %}
 Este taller también está disponible [🇪🇸 en Español](https://app.gitbook.com/@orestes/s/actions-on-google-smart-home-api-workshop/v/spanish)
 {% endhint %}
 
-## Objective
+### Objective
 
 In this workshop we will learn how to create our own Smart RGB light bulb that responds to voice commands through the Google Assistant. By the end you will have learned:
 
@@ -28,7 +28,11 @@ In this workshop we will learn how to create our own Smart RGB light bulb that r
 
   Google
 
-{% hint style="info" %}
-You need some hardware to follow along. Check out the [components list](preparation/requisites.md).
+### Reference code
+
+The final result should resemble [https://github.com/orestes/actions-on-google-smart-light](https://github.com/orestes/actions-on-google-smart-light)
+
+{% hint style="warning" %}
+You need some hardware to follow along. Don't skip ahead, check out the [components list](preparation/requisites.md) first.
 {% endhint %}
 
