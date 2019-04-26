@@ -99,6 +99,7 @@ Arduino programs have to functions:
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, 2, NEO_GRB + NEO_KHZ800);
 
 void setup() {
+  strip.begin();
   strip.setBrightness(255);
   Serial.begin(9600);
 }
