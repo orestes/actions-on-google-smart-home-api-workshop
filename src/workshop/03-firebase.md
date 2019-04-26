@@ -21,11 +21,16 @@ Go to [nodejs.org](https://nodejs.org) and follow the instructions for your Oper
 Let's create a Firebase project
 
 * Create a Firebase project
-* Install cli with 
-* firebase login
-* firbase init \(functions + hosting\)
+* Install cli `with npm install --global firebase-tools`
+* Run the `firebase login` command
+* Create a directory for your code
+* Inside the directory, run `firebase init` 
+* Using the space key to select, and the arrow keys to navigate, select functions and hosting
+* Use all the default options
 
-"engines": { "node": "8" } in functions package.json
+Open the `package.json` file and add a configuration for the runtime environment
+
+`"engines": { "node": "8" }`
 
 ## Seed the initial data
 
@@ -40,21 +45,23 @@ We are going to create a data structure that holds the state representation for 
 {% code-tabs-item title="database.json" %}
 ```javascript
 {
-  "devices": {
-    "light-1": {
-      "id": "light-1",
-      "state": {
-        "brightness": 16,
-        "hex": "#009055",
-        "on": true,
-        "rgb": {
-          "b": 80,
-          "g": 144,
-          "r": 0
-        }
+  "light-1" : {
+    "id" : "light-1",
+    "state" : {
+      "brightness" : 16,
+      "color" : {
+        "hex" : "#000000",
+        "name" : "black",
+        "rgb" : {
+          "b" : 0,
+          "g" : 0,
+          "r" : 0
+        },
+        "spectrum" : 0
       },
-      "type": "rgb-led-dimmable"
-    }
+      "on" : true
+    },
+    "type" : "rgb-led-dimmable"
   }
 }
 ```
@@ -68,6 +75,12 @@ Once you seed the data, your database should look like this.
 Database seed
 
 ## Connecting our prototype
+
+Copy the following code, adjusting the following settings as you need them.
+
+* PROJECT\_URL
+* WIFI\_SSID
+* WIFI\_PASSWORD
 
 {% code-tabs %}
 {% code-tabs-item title="firebase-rg-led.ino" %}
@@ -83,6 +96,10 @@ Database seed
 // Wi-fi access
 #define WIFI_SSID "orestes_LTE"
 #define WIFI_PASSWORD "hell0wifi"
+
+// Firebase project
+#define PROJECT_URL "toy-home.firebaseio.com"
+
 
 // NeoPixel connection
 const int LED_STRIP_PIN = 2;
@@ -110,7 +127,7 @@ void setup() {
   Serial.print("connected: ");
   Serial.println(WiFi.localIP());
 
-  Firebase.begin("toy-home.firebaseio.com");
+  Firebase.begin(PROJECT_URL);
   Firebase.stream("/devices/light-1/state"); // TODO: Use your device ID if you change it
 }
 
@@ -210,6 +227,16 @@ void setColor(int red, int green, int blue) {
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
+
+#### Test run
+
+**Upload** your code and open **Tools &gt; Serial Monitor**
+
+You should see your board connect to the internet and receive data from Firebase
+
+Update values in the Firebase Console and watch as your RGB led changes and your Serial Monitor shows you log traces. It's working!
+
+![](../.gitbook/assets/image%20%284%29.png)
 
 ## References
 

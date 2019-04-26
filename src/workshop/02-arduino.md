@@ -47,7 +47,7 @@ Open the Board Manager in Tools &gt; Board &gt; Boards Manager
 
 We are going to use the Library Manager to install this library
 
-![Arduino IDE Library Manager](../.gitbook/assets/image%20%286%29.png)
+![Arduino IDE Library Manager](../.gitbook/assets/image%20%287%29.png)
 
 1. Open the Library Manager by clicking on the menu Sketch &gt; Include Library &gt; Manage Libraries
 2. Search for neopixel
@@ -59,7 +59,7 @@ We are going to use the Library Manager to install this library
 
 We will use the Library Manager again to install this one
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%285%29.png)
 
 1. Open the Library Manager by clicking on the menu Sketch &gt; Include Library &gt; Manage Libraries
 2. Search for ArduinoJson
@@ -83,7 +83,7 @@ Open the Arduino  IDE
 
 
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%289%29.png)
 
 Arduino programs have to functions:
 
@@ -106,14 +106,17 @@ void setup() {
 void loop() {
     strip.setPixelColor(0, strip.Color(255, 0, 0));
     Serial.println("red");
+    strip.show();
     delay(500);
     
     strip.setPixelColor(0, strip.Color(0, 255, 0));
     Serial.println("green");
+    strip.show();
     delay(500);
     
     strip.setPixelColor(0, strip.Color(00, 0, 255));
     Serial.println("blue");
+    strip.show();
     delay(500);
 }
 ```

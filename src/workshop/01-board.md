@@ -8,7 +8,7 @@ description: Setting up the components for our IoT project
 
 We are going to use a very cheap and useful esp8266-based board
 
-![LOLIN D1 mini pro](../.gitbook/assets/image%20%289%29.png)
+![LOLIN D1 mini pro](../.gitbook/assets/image%20%2810%29.png)
 
 ## Drivers
 
@@ -31,7 +31,7 @@ Set up your board on top of your solder-less breadboard using the female to male
 
 Alternative, you can do it using the male-to-male pins
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../.gitbook/assets/image%20%288%29.png)
 
 Keep track of where the 5v, GND pins are
 
@@ -49,7 +49,7 @@ Connect the RGB LED to the board using the male end of the jumper cables, making
 * RGB LED **+5v** to board's **5v pin**
 * RGB LED **Data in** to boards' data pin \(**2** in our example\)
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%286%29.png)
 
 
 
