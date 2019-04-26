@@ -20,10 +20,11 @@ Go to [nodejs.org](https://nodejs.org) and follow the instructions for your Oper
 
 Let's create a Firebase project
 
-* Go to console.firebase.google.com
+* Go to [console.firebase.google.com](https://console.firebase.google.com)
 * Log in with your Google account
 * Create a Firebase project
-* Install cli `with npm install --global firebase-tools`
+* Open a Terminal
+* Run`npm install --global firebase-tools`
 * Run the `firebase login` command
 * Create a directory for your code
 * Inside the directory, run `firebase init` 
@@ -74,9 +75,33 @@ We are going to create a data structure that holds the state representation for 
 
 Once you seed the data, your database should look like this.
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](../.gitbook/assets/image%20%2813%29.png)
 
 Using the Firebase Console, you can update your data manually whenever you want.
+
+### Set up the database rules
+
+We need to access this data without authenticating for now, let's open our dataset for read and write access
+
+Go to the rules tab and update the contents with
+
+{% code-tabs %}
+{% code-tabs-item title="firebase-rules.json" %}
+```javascript
+{
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+Make sure you **publish** the rules
+
+![](../.gitbook/assets/image%20%289%29.png)
 
 ## Connecting our prototype
 

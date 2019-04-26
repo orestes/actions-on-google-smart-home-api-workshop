@@ -8,7 +8,7 @@ description: Setting up the components for our IoT project
 
 We are going to use a very cheap and useful esp8266-based board
 
-![LOLIN D1 mini pro](../.gitbook/assets/image%20%2810%29.png)
+![LOLIN D1 mini pro](../.gitbook/assets/image%20%2811%29.png)
 
 ## Drivers
 
