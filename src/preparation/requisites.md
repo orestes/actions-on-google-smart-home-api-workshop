@@ -18,5 +18,3 @@ description: What you need before you get started
   * 3x male-to-male jumper cables
   * 1x NeoPixel
 
-\[photos go here\]
-

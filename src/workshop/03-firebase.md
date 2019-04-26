@@ -10,12 +10,18 @@ Firebase is a cloud platform from Google. It's built on top of Google Cloud Plat
 * Cloud Functions \(Functions as a Service\)
 * Realtime Database \(streaming/real-time NoSQL data storage\)
 
+## Dependencies
+
+You need **Node.js** and npm installed on your computer
+
+Go to [nodejs.org](https://nodejs.org) and follow the instructions for your Operating System
+
 ## Firebase project
 
-Create a Firebase project
+Let's create a Firebase project
 
 * Create a Firebase project
-* Install cli
+* Install cli with 
 * firebase login
 * firbase init \(functions + hosting\)
 

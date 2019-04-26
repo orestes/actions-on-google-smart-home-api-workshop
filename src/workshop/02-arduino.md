@@ -40,7 +40,7 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
 We are going to use the Library Manager to install this library
 
-![Arduino IDE Library Manager](../.gitbook/assets/image%20%281%29.png)
+![Arduino IDE Library Manager](../.gitbook/assets/image%20%282%29.png)
 
 1. Open the Library Manager by clicking on the menu Sketch &gt; Include Library &gt; Manage Libraries
 2. Search for neopixel
