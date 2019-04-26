@@ -20,6 +20,8 @@ Go to [nodejs.org](https://nodejs.org) and follow the instructions for your Oper
 
 Let's create a Firebase project
 
+* Go to console.firebase.google.com
+* Log in with your Google account
 * Create a Firebase project
 * Install cli `with npm install --global firebase-tools`
 * Run the `firebase login` command
@@ -246,9 +248,10 @@ We are going to use Firebase Cloud functions to create two endpoints for the Act
 
 We will need
 
-A token endpoint where Google will perform OAuth 2 authentication
+* A **token** endpoint where Google will perform OAuth 2 authentication
+* A **request** endpoint to handle requests from the Smart Home API
 
-Let's add some dependencies to our functions
+Let's add some dependencies to build our functions
 
 Go into the functions directory and run
 
