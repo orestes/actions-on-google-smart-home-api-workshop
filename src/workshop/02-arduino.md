@@ -38,7 +38,7 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
 We are going to use the Library Manager to install this library
 
-![Arduino IDE Library Manager](../.gitbook/assets/image%20%284%29.png)
+![Arduino IDE Library Manager](../.gitbook/assets/image%20%285%29.png)
 
 1. Open the Library Manager by clicking on the menu Sketch &gt; Include Library &gt; Manage Libraries
 2. Search for neopixel
@@ -50,11 +50,11 @@ We are going to use the Library Manager to install this library
 
 We will use the Library Manager again to install this one
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](../.gitbook/assets/image%20%283%29.png)
 
 1. Open the Library Manager by clicking on the menu Sketch &gt; Include Library &gt; Manage Libraries
 2. Search for ArduinoJson
-3. Select **Adafruit NeoPixel** by **Adafruit**
+3. Select **ArduinoJson** by **Benoit Blancho**
 4. **Make sure you select the v5 version**
 5. Click the **Install button**
 6. Don't close the Library Manager dialog yet
@@ -74,7 +74,7 @@ Open the Arduino  IDE
 
 
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
 Arduino programs have to functions:
 
@@ -135,7 +135,7 @@ Make sure the baud rate matches the one in the code
 
 Watch as your code runs
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](../.gitbook/assets/image%20%282%29.png)
 
 ## References
 
