@@ -2,7 +2,7 @@
 description: How to follow this workshop
 ---
 
-# Get started
+# Welcome!
 
 ## Select your language
 

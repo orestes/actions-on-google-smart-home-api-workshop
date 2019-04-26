@@ -1,6 +1,9 @@
 # Table of contents
 
-* [Get started](README.md)
+* [Welcome](README.md)
+
+## Preparation
+
 * [Introduction](preparation/introduction.md)
 * [Requisites](preparation/requisites.md)
 
