@@ -10,5 +10,5 @@ We are going to build an Arduino project that mimics a Smart RGB Light Bulb. The
 
 ## Expected result
 
-![](../.gitbook/assets/result%20%281%29.png)
+![](../.gitbook/assets/result.png)
 

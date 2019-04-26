@@ -5,11 +5,13 @@ description: What you need before you get started
 # Requisites
 
 * ~2h of time
-* Google Account
-* Mobile phone with Google Home or Google Assistant apps installed
 * Laptop
-* Hardware
-  * 1x esp8266 board \(LOLIN d1 mini pro recommended\)
+* Access to a power outlet for your laptop
+* Access to a Wi-Fi 2.4 network with SSID + password for your board \(and maybe  your laptop too\)
+* A Google Account
+* A mobile phone with Google Home or Google Assistant apps installed
+* Some hardware:
+  * 1x esp8266-base board \(LOLIN d1 mini pro recommended\)
   * 2x female-to-male pins
   * 1x solder-less breadboard
   * 3x male-to-female jumper cables

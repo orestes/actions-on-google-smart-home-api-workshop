@@ -14,6 +14,13 @@ Firebase is a cloud platform from Google. It's built on top of Google Cloud Plat
 
 Create a Firebase project
 
+* Create a Firebase project
+* Install cli
+* firebase login
+* firbase init \(functions + hosting\)
+
+"engines": { "node": "8" } in functions package.json
+
 ## Seed the initial data
 
 1. In the navigation menu on the left, click on **Develop** › **Database**

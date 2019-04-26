@@ -4,13 +4,9 @@ description: How to follow this workshop
 
 # Welcome
 
-### Select your language
-
-{% hint style="info" %}
-Este taller también está disponible [🇪🇸 en Español](https://app.gitbook.com/@orestes/s/actions-on-google-smart-home-api-workshop/v/spanish)
-{% endhint %}
-
 ### Objective
+
+The main goal is to **have fun** writing simple **code** and **learn** new things **together**, but what exactly is it that we are going to learn?
 
 In this workshop we will learn how to create our own Smart RGB light bulb that responds to voice commands through the Google Assistant. By the end you will have learned:
 
@@ -30,7 +26,13 @@ In this workshop we will learn how to create our own Smart RGB light bulb that r
 
 ### Reference code
 
-The final result should resemble [https://github.com/orestes/actions-on-google-smart-light](https://github.com/orestes/actions-on-google-smart-light)
+The final result is available on GitHub at [orestes/actions-on-google-smart-light](https://github.com/orestes/actions-on-google-smart-light)
+
+This repo contains
+
+* The Arduino code for the smart light project
+* The Firebase Cloud Functions code to integrate with the Actions on Google Smart Home API 
+* The front-end login screen to fake authenticating users when they link their accounts on the Google Home app
 
 {% hint style="warning" %}
 You need some hardware to follow along. Don't skip ahead, check out the [components list](preparation/requisites.md) first.
