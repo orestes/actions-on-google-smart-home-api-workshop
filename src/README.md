@@ -2,14 +2,10 @@
 description: How to follow this workshop
 ---
 
-# Welcome
-
-Thank you for joining our workshop today. Let's get started!
-
 ## Select your language
 
 {% hint style="info" %}
-### Este taller también está disponible [🇪🇸 en Español](https://app.gitbook.com/@orestes/s/actions-on-google-smart-home-api-workshop/v/spanish)
+Este taller también está disponible [🇪🇸 en Español](https://app.gitbook.com/@orestes/s/actions-on-google-smart-home-api-workshop/v/spanish)
 {% endhint %}
 
 ## Objective
