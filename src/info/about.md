@@ -10,4 +10,5 @@ This workshop was created by Orestes Carracedo in 2018.
 
 All the documentation is Open Source and available on GitHub
 
-- [orestes/actions-on-google-smart-home-api-workshop](https://github.com/orestes/actions-on-google-smart-home-api-workshop)
+* [orestes/actions-on-google-smart-home-api-workshop](https://github.com/orestes/actions-on-google-smart-home-api-workshop)
+

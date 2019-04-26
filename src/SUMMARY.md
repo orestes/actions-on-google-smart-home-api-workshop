@@ -9,13 +9,14 @@
 
 ## Workshop
 
-* [Board](chapters/01-board.md)
-* [Arduino](chapters/02-arduino.md)
-* [Firebase](chapters/03-firebase.md)
-* [Actions on Google](chapters/04-actions-on-google.md)
-* [Congratulations!](chapters/05-congratulations.md)
+* [Board](workshop/01-board.md)
+* [Arduino](workshop/02-arduino.md)
+* [Firebase](workshop/03-firebase.md)
+* [Actions on Google](workshop/04-actions-on-google.md)
+* [Congratulations!](workshop/05-congratulations.md)
 
 ## Info
 
 * [FAQ](info/faq.md)
 * [About](info/about.md)
+
