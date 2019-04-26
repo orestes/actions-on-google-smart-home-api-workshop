@@ -2,18 +2,24 @@
 description: Setting up the components for our IoT project
 ---
 
-# Board
+# Electronics
 
 ## LOLIN D1 mini pro
 
 We are going to use a very cheap and useful esp8266-based board
 
+![LOLIN D1 mini pro](../.gitbook/assets/image%20%286%29.png)
+
 ## Drivers
 
-We need to install USB drivers for the CH34X chipset so we can flash our code 
+We need to install USB drivers for the CH34X chipset so we can connecto to our board and flash our code 
 
 * [Driver for Windows](https://wiki.wemos.cc/_media/ch341ser_win_3.4.zip)
 * [Driver for Mac OS X](https://wiki.wemos.cc/_media/ch341ser_mac_1.5.zip)
+
+{% hint style="warning" %}
+Reboot your computer after installing the drivers
+{% endhint %}
 
 ### Setup
 
@@ -35,7 +41,7 @@ Connect the RGB LED to the board using the male end of the jumper cables, making
 * RGB LED **+5v** to board's **5v pin**
 * RGB LED **Data in** to boards' data pin \(**2** in our example\)
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](../.gitbook/assets/image%20%283%29.png)
 
 
 
