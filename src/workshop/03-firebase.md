@@ -45,23 +45,25 @@ We are going to create a data structure that holds the state representation for 
 {% code-tabs-item title="database.json" %}
 ```javascript
 {
-  "light-1" : {
-    "id" : "light-1",
-    "state" : {
-      "brightness" : 16,
-      "color" : {
-        "hex" : "#000000",
-        "name" : "black",
-        "rgb" : {
-          "b" : 0,
-          "g" : 0,
-          "r" : 0
+  "devices" : {
+    "light-1" : {
+      "id" : "light-1",
+      "state" : {
+        "brightness" : 100,
+        "color" : {
+          "hex" : "#ff0000",
+          "name" : "rojo",
+          "rgb" : {
+            "b" : 0,
+            "g" : 0,
+            "r" : 255
+          },
+          "spectrum" : 16711680
         },
-        "spectrum" : 0
+        "on" : true
       },
-      "on" : true
-    },
-    "type" : "rgb-led-dimmable"
+      "type" : "rgb-led"
+    }
   }
 }
 ```

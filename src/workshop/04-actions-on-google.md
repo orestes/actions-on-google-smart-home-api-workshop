@@ -46,3 +46,14 @@ Fore the Token
 
 You're done!
 
+### All together
+
+Ask the Google Assistant to 
+
+* Turn on  the light
+* Turn off the light
+* Set the light to green
+* Set the light to 50%
+
+You should see the logs in the Serial Monitor and your RGB light following your commands
+
