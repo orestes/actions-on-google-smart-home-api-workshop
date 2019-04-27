@@ -35,6 +35,6 @@ This repo contains
 * The front-end login screen to fake authenticating users when they link their accounts on the Google Home app
 
 {% hint style="warning" %}
-You need some hardware to follow along. Don't skip ahead, check out the [components list](preparation/requisites.md) first.
+You need some hardware to follow along. Don't skip ahead, check out the [components list](requisites.md) first.
 {% endhint %}
 

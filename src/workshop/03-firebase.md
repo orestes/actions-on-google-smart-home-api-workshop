@@ -75,7 +75,7 @@ We are going to create a data structure that holds the state representation for 
 
 Once you seed the data, your database should look like this.
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](../.gitbook/assets/image%20%2814%29.png)
 
 Using the Firebase Console, you can update your data manually whenever you want.
 
@@ -101,7 +101,7 @@ Go to the rules tab and update the contents with
 
 Make sure you **publish** the rules
 
-![](../.gitbook/assets/image%20%289%29.png)
+![](../.gitbook/assets/image%20%2810%29.png)
 
 ## Connecting our prototype
 
@@ -265,7 +265,7 @@ You should see your board connect to the internet and receive data from Firebase
 
 Update values in the Firebase Console and watch as your RGB led changes and your Serial Monitor shows you log traces. It's working!
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%285%29.png)
 
 ## Firebase Cloud Functions
 
