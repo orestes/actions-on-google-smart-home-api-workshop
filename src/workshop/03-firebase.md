@@ -23,6 +23,7 @@ Let's create a Firebase project
 * Go to [console.firebase.google.com](https://console.firebase.google.com)
 * Log in with your Google account
 * Create a Firebase project
+* Make a mote of your **Project ID**. We will need it later.
 * Open a Terminal
 * Run`npm install --global firebase-tools`
 * Run the `firebase login` command
@@ -35,7 +36,9 @@ Open the `package.json` file and add a configuration for the runtime environment
 
 `"engines": { "node": "8" }`
 
-## Seed the initial data
+## Real-time Database
+
+### Seed the initial data
 
 1. In the navigation menu on the left, click on **Develop** › **Database**
 2. Choose Realtime Database. \(Firestore is not yet supported on Arduino\).
@@ -105,9 +108,9 @@ Make sure you **publish** the rules
 
 ## Connecting our prototype
 
-Copy the following code, adjusting the following settings as you need them.
+Copy the following code, and make sure to **update the following settings** to match your Wi-Fi settings and Firebase Project.
 
-* PROJECT\_URL
+* PROJECT\_ID
 * WIFI\_SSID
 * WIFI\_PASSWORD
 
@@ -123,12 +126,12 @@ Copy the following code, adjusting the following settings as you need them.
 #include <ESP8266WiFi.h>
 
 // Wi-fi access
-#define WIFI_SSID "orestes_LTE"
-#define WIFI_PASSWORD "hell0wifi"
+#define WIFI_SSID "YOUR_WIFI_HERE"
+#define WIFI_PASSWORD "YOUR_PASSWORD_HERE"
 
 // Firebase project
-#define PROJECT_URL "toy-home.firebaseio.com"
-
+#define PROJECT_ID "YOUR_PROJECT_ID_HERE"
+#define DEVICE_ID "light-1"
 
 // NeoPixel connection
 const int LED_STRIP_PIN = 2;
@@ -141,10 +144,13 @@ int r = 255;
 int g = 0;
 int b = 0;
 
+String endpoint = String(PROJECT_ID) + ".firebaseio.com";
+
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(LED_STRIP_COUNT, LED_STRIP_PIN, NEO_GRB + NEO_KHZ800);
 
 void setup() {
   Serial.begin(9600);
+  strip.begin();
 
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   Serial.print("connecting");
@@ -156,8 +162,8 @@ void setup() {
   Serial.print("connected: ");
   Serial.println(WiFi.localIP());
 
-  Firebase.begin(PROJECT_URL);
-  Firebase.stream("/devices/light-1/state"); // TODO: Use your device ID if you change it
+  Firebase.begin(endpoint);
+  Firebase.stream("/devices/" + String(DEVICE_ID) + "/state"); // TODO: Use your device ID if you change it
 }
 
 void loop() {
@@ -176,6 +182,7 @@ void loop() {
   } else {
     strip.setBrightness(0);
     strip.setPixelColor(0, strip.Color(0, 0, 0));  
+    strip.clear();
   }
   
   strip.show();
@@ -204,7 +211,7 @@ void updateDataFromFirebase() {
   json.prettyPrintTo(Serial);
   Serial.println("");
 
-  // We only act on  put events
+  // We only act on "put" events
   if (eventType != "put") {
     return;
   }
