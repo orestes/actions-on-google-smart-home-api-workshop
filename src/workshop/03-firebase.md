@@ -26,15 +26,41 @@ Let's create a Firebase project
 * Make a mote of your **Project ID**. We will need it later.
 * Open a Terminal
 * Run`npm install --global firebase-tools`
-* Run the `firebase login` command
+* Run the `firebase login` command and follow the prompt to log in using your Google account
 * Create a directory for your code
 * Inside the directory, run `firebase init` 
-* Using the space key to select, and the arrow keys to navigate, select functions and hosting
-* Use all the default options
+* Using the space key to select, and the arrow keys to navigate, select **functions** and **hosting**
+* Make sure you select your newly created Firebase Project
+* Select the default option for every prompt except for the following:
+  * For the **Configure as a single-page app setting** select **Yes**
 
-Open the `package.json` file and add a configuration for the runtime environment
+The Firebase CLI will then scaffold and configure a project for you. 
 
-`"engines": { "node": "8" }`
+Open the directory for your project with your favourite editor or IDE and you should have a directory structure similar to this
+
+* firebase.json 
+* public
+  * index.html 
+* functions
+  * index.js
+  * package.json
+  * node\_modules
+
+Open the `functions/package.json` file and add a configuration for the runtime environment
+
+```text
+{
+  "name": ...,
+  "description": ...,
+  "engines": { "node": "8" }
+...
+}
+
+```
+
+{% hint style="warning" %}
+**Important!** Do not copy and paste the code above. Open the file and add the **engines** configuration for the Firebase Cloud Functions environment
+{% endhint %}
 
 ## Real-time Database
 
