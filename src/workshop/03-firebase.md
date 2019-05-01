@@ -1,5 +1,5 @@
 ---
-description: Setting up our database
+description: Cloud Computing platform
 ---
 
 # Firebase

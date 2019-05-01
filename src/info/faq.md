@@ -1,12 +1,18 @@
 # FAQ
 
-### How much does the hardware cost?
+### **Where can I buy the hardware?**
 
-Under 10 USD
+We usually buy all the components on AliExpress or Amazon for under 10 USD/EUR in total per kit.
 
-## How long does it take?
+[LOLIN store on AliExpress](https://lolin.es.aliexpress.com/store/1331105)
 
-2-3 h depending on experience
+### How long does it take to complete the workshop?
+
+2-3 h, depending on your experience
+
+### Do I need to know how to program?
+
+No really, you can just copy and paste all the examples. If you already know how to code, you can use these examples as a starting point, optimizing and improving on them for your own needs and ideas
 
 ### Why don't you use $framework or $library?
 

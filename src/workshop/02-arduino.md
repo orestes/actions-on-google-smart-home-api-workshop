@@ -1,5 +1,5 @@
 ---
-description: Setting up our environment
+description: Electronics platform
 ---
 
 # Arduino
@@ -29,7 +29,7 @@ Download **Arduino IDE** for
 {% endtab %}
 
 {% tab title="Mac OS X" %}
-Download Arduino IDE for 
+Download **Arduino IDE** for 
 
 * [Mac OS X](https://www.arduino.cc/download_handler.php?f=/arduino-1.8.9-macosx.zip)
 {% endtab %}

@@ -1,5 +1,5 @@
 ---
-description: Setting up our Google Assistant integration
+description: Voice User Interface platform for the Google Assistant
 ---
 
 # Actions on Google
