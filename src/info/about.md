@@ -8,7 +8,7 @@ description: Details about this workshop
 
 Created by [Orestes Carracedo](https://orestes.io) in October 2018. 
 
-Last Update April 2019
+Last updated May 2019
 
 ### Contributing
 

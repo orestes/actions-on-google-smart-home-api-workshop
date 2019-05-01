@@ -1,11 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
-* [Introduction](requisites.md)
-
-## Preparation
-
-* [Introduction](preparation/introduction.md)
+* [Requisites](requisites.md)
 
 ## Workshop
 

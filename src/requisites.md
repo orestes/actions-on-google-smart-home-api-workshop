@@ -2,19 +2,7 @@
 description: What you need before you get started
 ---
 
-# Introduction
-
-## The project
-
-We are going to build an Arduino project that mimics a Smart RGB Light Bulb. The project will connect to the internet on its own and get its configuration from the Firebase Realtime Database.
-
-### **Preview**
-
-This is how your DIY smart light bulb will look like in the end
-
-![](.gitbook/assets/image.png)
-
-### Requisites
+# Requisites
 
 Here's what you need to complete this workshop successfully
 
