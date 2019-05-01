@@ -4,7 +4,7 @@ description: Setting up our database
 
 # Firebase
 
-Firebase is a cloud platform from Google. It's built on top of Google Cloud Platform, but it aims to make Cloud Computing easier to access for developers. It provides multiple services, we're going to be using
+Firebase is a cloud platform from Google. It's built on top of Google Cloud Platform and it aims to make Cloud Computing easier to access for developers. It provides multiple services but we are going to be using only these:
 
 * Hosting
 * Cloud Functions \(Functions as a Service\)
@@ -12,27 +12,42 @@ Firebase is a cloud platform from Google. It's built on top of Google Cloud Plat
 
 ## Dependencies
 
-You need **Node.js** and npm installed on your computer
+You need **Node.js** \(which comes with **npm**\) installed on your computer
 
 Go to [nodejs.org](https://nodejs.org) and follow the instructions for your Operating System
 
 ## Firebase project
 
-Let's create a Firebase project
+First, we have to create a Firebase project
 
 * Go to [console.firebase.google.com](https://console.firebase.google.com)
 * Log in with your Google account
-* Create a Firebase project
-* Make a mote of your **Project ID**. We will need it later.
-* Open a Terminal
+* Create a Firebase project \(it will use the default plan, _Spark_, which is free\)
+* Make a note of your **Project ID**. We will need it later.
+
+Let's set up the Firebase CLI so we can easily implement features on the Firebase Platform.
+
+* Open a **Terminal** or **Command Prompt**
 * Run`npm install --global firebase-tools`
 * Run the `firebase login` command and follow the prompt to log in using your Google account
+
+Now let's write de code for our Google Assistant integration.
+
 * Create a directory for your code
 * Inside the directory, run `firebase init` 
-* Using the space key to select, and the arrow keys to navigate, select **functions** and **hosting**
+* Using the space key to select and the arrow keys to navigate, select only these features:
+  * functions
+  * hosting
 * Make sure you select your newly created Firebase Project
-* Select the default option for every prompt except for the following:
-  * For the **Configure as a single-page app setting** select **Yes**
+* Select these settings
+
+| Setting | Value |
+| :--- | :--- |
+| What language would you like to use to write Cloud Functions?  | JavaScript |
+| Do you want to use ESLint to catch probable bugs and enforce style? | No |
+| Do you want to install dependencies with npm now? | Yes |
+| What do you want to use as your public directory? | public |
+| Configure as a single-page app \(rewrite all urls to /index.html\)? | Yes |
 
 The Firebase CLI will then scaffold and configure a project for you. 
 
