@@ -12,12 +12,28 @@ We'll be using the Arduino platform and IDE to write our code
 
 Download and install the Arduino IDE.
 
+{% tabs %}
+{% tab title="Windows" %}
+Download **Arduino IDE** for 
+
 * [Windows](https://www.arduino.cc/download_handler.php?f=/arduino-1.8.9-windows.exe)
+{% endtab %}
+
+{% tab title="Linux" %}
+Download **Arduino IDE** for
+
 * [Linux 32 bits](https://www.arduino.cc/download_handler.php?f=/arduino-1.8.9-linux32.tar.xz)
 * [Linux 64 bits](https://www.arduino.cc/download_handler.php?f=/arduino-1.8.9-linux64.tar.xz)
 * [Linux ARM 32 bits](https://www.arduino.cc/download_handler.php?f=/arduino-1.8.9-linuxarm.tar.xz)
 * [Linux 64 bits](https://www.arduino.cc/download_handler.php?f=/arduino-1.8.9-linuxaarch64.tar.xz)
+{% endtab %}
+
+{% tab title="Mac OS X" %}
+Download Arduino IDE for 
+
 * [Mac OS X](https://www.arduino.cc/download_handler.php?f=/arduino-1.8.9-macosx.zip)
+{% endtab %}
+{% endtabs %}
 
 ### Install board definitions
 
@@ -34,11 +50,11 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
 #### Install the esp8266 boards definitions
 
-Open the Board Manager in Tools &gt; Board &gt; Boards Manager
+Open the Board Manager in **Tools › Board › Boards Manager**
 
 ![](../.gitbook/assets/image%20%283%29.png)
 
-1. Search for esp8266
+1. Search for **esp8266**
 2. Install the boards definition
 
 ### Install libraries
@@ -49,7 +65,10 @@ We are going to use the Library Manager to install this library
 
 ![Arduino IDE Library Manager](../.gitbook/assets/image%20%288%29.png)
 
-1. Open the Library Manager by clicking on the menu Sketch &gt; Include Library &gt; Manage Libraries
+1. Open the Library Manager by clicking on the menu **Sketch** › **Include Library** › 
+
+   **Manage Libraries**
+
 2. Search for neopixel
 3. Select **Adafruit NeoPixel** by **Adafruit**
 4. Click the **Install button**
@@ -61,9 +80,9 @@ We will use the Library Manager again to install this one
 
 ![](../.gitbook/assets/image%20%286%29.png)
 
-1. Open the Library Manager by clicking on the menu Sketch &gt; Include Library &gt; Manage Libraries
+1. Open the Library Manager by clicking on the menu **Sketch › Include Library › Manage Libraries**
 2. Search for ArduinoJson
-3. Select **ArduinoJson** by **Benoit Blancho**
+3. Select **ArduinoJson** by **Benoit Blanchon**
 4. **Make sure you select the v5 version**
 5. Click the **Install button**
 6. Don't close the Library Manager dialog yet
@@ -73,7 +92,7 @@ We will use the Library Manager again to install this one
 Installing this libary is a bit different. We are going to download a zip with a stable release and add it to the Arduino IDE.
 
 1. Download the v0.3 release for **firebase-arduino** [here](https://github.com/FirebaseExtended/firebase-arduino/archive/v0.3.zip)
-2. Click on Sketch &gt; Include Library &gt; Add .ZIP library
+2. Click on **Sketch › Include Library › Add .ZIP library**
 3. Select the zip you just downloaded for firebase-arduino
 
 ### Test program
@@ -128,19 +147,16 @@ void loop() {
 
 Connect your board using the USB cable.
 
-Make sure you have selected the LOLIN d1 mini pro board under **Tools &gt; Board**
-
-Make sure you are using the appropriate COM port under **Tools &gt; Port**
-
-Click the **upload** button
-
-Enjoy your blinking RGB led!
+* Make sure you have selected the **LOLIN d1 mini pro** board under **Tools › Board** 
+* Make sure you are using the appropriate COM port under **Tools › Port** 
+* Click the **upload** button 
+* Enjoy your blinking RGB led!
 
 Let's take a look under the hood
 
 ### The serial monitor
 
-Open the Serial Monitor on **Tools** &gt; **Serial Monitor**
+Open the Serial Monitor on **Tools › Serial Monitor**
 
 {% hint style="warning" %}
 Make sure the baud rate matches the one in the code
