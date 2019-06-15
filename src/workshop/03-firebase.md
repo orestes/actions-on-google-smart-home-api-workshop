@@ -209,10 +209,9 @@ void setup() {
 
 void loop() {
   if (Firebase.failed()) {
-    Serial.println("streaming error");
+    Serial.println("Streaming error. Did you set up the Firebase rules?");
     Serial.println(Firebase.error());
-
-    Serial.println(Firebase.error());
+    delay(1000);
   }
 
   updateDataFromFirebase();
