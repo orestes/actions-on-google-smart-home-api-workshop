@@ -194,7 +194,7 @@ void setup() {
   strip.begin();
 
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
-  Serial.print("connecting");
+  Serial.print("Connecting to Wi-Fi");
   while (WiFi.status() != WL_CONNECTED) {
     Serial.print(".");
     delay(1000);
@@ -202,6 +202,9 @@ void setup() {
   Serial.println();
   Serial.print("connected: ");
   Serial.println(WiFi.localIP());
+  
+  Serial.print("Connecting to Firebase: ");
+  Serial.println(endpoint);
 
   Firebase.begin(endpoint);
   Firebase.stream("/devices/" + String(DEVICE_ID) + "/state"); // TODO: Use your device ID if you change it
