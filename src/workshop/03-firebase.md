@@ -88,8 +88,8 @@ Initially, our database will be empty initially.
 
 We are going to create a data structure that holds the state representation for our smart light bulb. We can create the properties one by one to reflect the JSON below, or just use the **import JSON** command on the options menu
 
-{% code-tabs %}
-{% code-tabs-item title="database.json" %}
+{% tabs %}
+{% tab title="database.json" %}
 ```javascript
 {
   "devices" : {
@@ -114,8 +114,8 @@ We are going to create a data structure that holds the state representation for 
   }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 Once you seed the data, your database should look like this.
 
@@ -129,8 +129,8 @@ We need to access this data without authenticating for now, let's open our datas
 
 Go to the rules tab and update the contents with
 
-{% code-tabs %}
-{% code-tabs-item title="firebase-rules.json" %}
+{% tabs %}
+{% tab title="firebase-rules.json" %}
 ```javascript
 {
   /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
@@ -140,8 +140,8 @@ Go to the rules tab and update the contents with
   }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 Make sure you **publish** the rules
 
@@ -155,8 +155,8 @@ Copy the following code, and make sure to **update the following settings** to m
 * WIFI\_SSID
 * WIFI\_PASSWORD
 
-{% code-tabs %}
-{% code-tabs-item title="firebase-rg-led.ino" %}
+{% tabs %}
+{% tab title="firebase-rg-led.ino" %}
 ```c
 #include <FirebaseError.h>
 #include <FirebaseObject.h>
@@ -304,8 +304,8 @@ void setColor(int red, int green, int blue) {
   Serial.println(b);
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 #### Test run
 
@@ -336,8 +336,8 @@ npm install jsonwebtoken
 
 Update the functions/index.js file with the endpoint definitions
 
-{% code-tabs %}
-{% code-tabs-item title="functions/index.js" %}
+{% tabs %}
+{% tab title="functions/index.js" %}
 ```javascript
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
@@ -519,8 +519,8 @@ exports.token = functions.https.onRequest(tokenHandler);
 exports.request = functions.https.onRequest(requestHandler);
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 And now let's deploy our functions
 
@@ -536,8 +536,8 @@ We are going to create a simple login page that will take the parameters from Go
 
 Update the public/index.html file
 
-{% code-tabs %}
-{% code-tabs-item title="public/index.html" %}
+{% tabs %}
+{% tab title="public/index.html" %}
 ```markup
 <!DOCTYPE html>
 <html lang="en">
@@ -600,8 +600,8 @@ Update the public/index.html file
 </html>
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 Deploy this page with 
 

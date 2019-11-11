@@ -110,8 +110,8 @@ Arduino programs have to functions:
 
 **Loop** runs again and again while the device is connected
 
-{% code-tabs %}
-{% code-tabs-item title="neopixel-test.ino" %}
+{% tabs %}
+{% tab title="neopixel-test.ino" %}
 ```c
 #include <Adafruit_NeoPixel.h>
 
@@ -140,8 +140,8 @@ void loop() {
     delay(500);
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ### Flash your program
 
