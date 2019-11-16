@@ -156,7 +156,7 @@ Let's copy the code below and make some magic happen
 #include <Adafruit_NeoPixel.h>
 
 # This code asumes your data pin is 2. Change it if you need to
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, 2, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, D4, NEO_GRB + NEO_KHZ800);
 
 void setup() {
   strip.begin();
