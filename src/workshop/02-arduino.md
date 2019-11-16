@@ -69,19 +69,19 @@ Connect your board using the USB cable.
 {% tab title="LOLIN D1 mini pro" %}
 Use **LOLIN \(WEMOS\) D1 mini Pro**
 
-![LOLIN \(WEMOS\) D1 mini Pro](../.gitbook/assets/image%20%2810%29.png)
+![LOLIN \(WEMOS\) D1 mini Pro](../.gitbook/assets/image%20%2811%29.png)
 {% endtab %}
 
 {% tab title="WeMos D1 mini" %}
 Use **WeMos D1 R1**
 
-![WeMos D1 R1](../.gitbook/assets/image%20%2819%29.png)
+![WeMos D1 R1](../.gitbook/assets/image%20%2820%29.png)
 {% endtab %}
 
 {% tab title="Compatible D1 mini" %}
 Use **WeMos D1 R1**
 
-![WeMos D1 R1](../.gitbook/assets/image%20%2819%29.png)
+![WeMos D1 R1](../.gitbook/assets/image%20%2820%29.png)
 {% endtab %}
 {% endtabs %}
 
@@ -91,7 +91,7 @@ Use **WeMos D1 R1**
 
 We are going to use the Library Manager to install this library
 
-![Arduino IDE Library Manager](../.gitbook/assets/image%20%289%29.png)
+![Arduino IDE Library Manager](../.gitbook/assets/image%20%2810%29.png)
 
 1. Open the Library Manager by clicking on the menu **Sketch** › **Include Library** › 
 
@@ -106,7 +106,7 @@ We are going to use the Library Manager to install this library
 
 We will use the Library Manager again to install this one
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../.gitbook/assets/image%20%288%29.png)
 
 1. Open the Library Manager by clicking on the menu **Sketch › Include Library › Manage Libraries**
 2. Search for ArduinoJson
@@ -117,11 +117,29 @@ We will use the Library Manager again to install this one
 
 #### FirebaseExtended
 
-Installing this libary is a bit different. We are going to download a zip with a stable release and add it to the Arduino IDE.
+Installing this library is a bit different. We are going to download a zip with a stable release and add it to the Arduino IDE.
 
 1. Download the v0.3 release for **firebase-arduino** [here](https://github.com/FirebaseExtended/firebase-arduino/archive/v0.3.zip)
 2. Click on **Sketch › Include Library › Add .ZIP library**
 3. Select the zip you just downloaded for firebase-arduino
+
+#### Firebase ESP8266 Client
+
+1. Open the Library Manager by clicking on the menu **Sketch › Include Library › Manage Libraries**
+2. Search for firebase
+3. Select **FirebaseESP8266 Client** by **Mobitz**
+4. Click the **Install button**
+5. Close the Library Manager
+
+![](../.gitbook/assets/image%20%284%29.png)
+
+#### Restart Arduino IDE
+
+{% hint style="warning" %}
+
+
+After updating or installing libraries, restarting Arduino IDE is required for changes to take effect
+{% endhint %}
 
 ### Test program
 
@@ -130,7 +148,7 @@ First, open the Arduino  IDE
 
 
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](../.gitbook/assets/image%20%2814%29.png)
 
 Notice that Arduino programs have at least two functions:
 
@@ -173,10 +191,10 @@ void loop() {
 
 ### Flash your program
 
-* Click the **upload** button on the top bar of the Arduino Studio
+* Click the **upload** button on the top bar of the Arduino IDE
 * Enjoy your blinking RGB led!
 
-![The upload button](../.gitbook/assets/image%20%284%29.png)
+![The upload button](../.gitbook/assets/image%20%285%29.png)
 
 ### The serial monitor
 
@@ -188,7 +206,7 @@ Make sure the baud rate on this window matches the one in the code
 
 Watch as your code runs
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%286%29.png)
 
 ## References
 

@@ -117,7 +117,7 @@ We are going to create a data structure that holds the state representation for 
 
 Once you seed the data, your database should look like this.
 
-![The Firebase Console](../.gitbook/assets/image%20%2818%29.png)
+![The Firebase Console](../.gitbook/assets/image%20%2819%29.png)
 
 Using the Firebase Console on your browser, you can update your data manually whenever you want.
 
@@ -145,7 +145,7 @@ Go to the rules tab and update the contents with
 
 Make sure you **publish** the rules
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](../.gitbook/assets/image%20%2813%29.png)
 
 ## Connecting our prototype
 
@@ -313,7 +313,7 @@ You should see your board connect to the internet and receive data from Firebase
 
 Now change some color values in the Firebase Console and watch as your RGB led changes and your Serial Monitor shows you log traces. It's working!
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
 ## Firebase Cloud Functions
 
@@ -607,5 +607,5 @@ Take a note of the generated public URL for your Firebase-hosted page
 
 ## References
 
-* [https://firebase-arduino.readthedocs.io/en/latest](https://firebase-arduino.readthedocs.io/en/latest)
+* [https://github.com/FirebaseExtended/firebase-arduino](https://github.com/FirebaseExtended/firebase-arduino)
 

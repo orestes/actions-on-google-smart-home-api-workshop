@@ -12,13 +12,13 @@ These boards are compatible with Arduino, which makes them really use to work wi
 {% tab title="D1 mini pro" %}
 
 
-![LOLIN D1 mini pro](../.gitbook/assets/image%20%2816%29.png)
+![LOLIN D1 mini pro](../.gitbook/assets/image%20%2817%29.png)
 
 Official site: [https://www.wemos.cc/en/latest/d1/d1\_mini\_pro.html](https://www.wemos.cc/en/latest/d1/d1_mini_pro.html)
 {% endtab %}
 
 {% tab title="D1 mini" %}
-![WeMos D1 mini](../.gitbook/assets/image%20%2814%29.png)
+![WeMos D1 mini](../.gitbook/assets/image%20%2815%29.png)
 
 {% hint style="warning" %}
 Retired/replaced by Lolin D1 mini
@@ -28,7 +28,7 @@ Official site: [https://www.wemos.cc/en/latest/d1/d1\_mini.html](https://www.wem
 {% endtab %}
 
 {% tab title="Compatible D1 mini" %}
-![D1 mini-compatible board](../.gitbook/assets/image%20%2815%29.png)
+![D1 mini-compatible board](../.gitbook/assets/image%20%2816%29.png)
 
 Available on Amazon EU: [https://www.amazon.es/gp/product/B0754N794H](https://www.amazon.es/gp/product/B0754N794H)
 {% endtab %}
@@ -55,7 +55,7 @@ Set up your board on top of your solder-less breadboard using the female to male
 
 Alternative, you can do it using the male-to-male pins
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](../.gitbook/assets/image%20%2812%29.png)
 
 Keep track of where the 5v, GND pins are
 
@@ -77,7 +77,7 @@ Connect the RGB LED to the board using the male end of the jumper cables, making
 
 There's two main controllers for these RGB leds, APA106 and WS2812, and both use the same configuration
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%289%29.png)
 
 
 
