@@ -117,7 +117,7 @@ We are going to create a data structure that holds the state representation for 
 
 Once you seed the data, your database should look like this.
 
-![The Firebase Console](../.gitbook/assets/image%20%2821%29.png)
+![The Firebase Console](../.gitbook/assets/image%20%2823%29.png)
 
 Using the Firebase Console on your browser, you can update your data manually whenever you want.
 
@@ -145,7 +145,7 @@ Go to the rules tab and update the contents with
 
 Make sure you **publish** the rules
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../.gitbook/assets/image%20%2815%29.png)
 
 #### Database secret
 
@@ -153,7 +153,7 @@ In order to connect to our Firebase Realtime Database from our Arduino code, we'
 
 Go to your project settings on the Firebase Console
 
-![](../.gitbook/assets/image%20%2820%29.png)
+![](../.gitbook/assets/image%20%2822%29.png)
 
 From here, go to **Service Accounts** › **Database secrets**. We need to generate a new database secret and save it for our next step.
 

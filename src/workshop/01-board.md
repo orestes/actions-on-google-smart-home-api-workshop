@@ -12,13 +12,13 @@ These boards are compatible with Arduino, which makes them really use to work wi
 {% tab title="D1 mini pro" %}
 
 
-![LOLIN D1 mini pro](../.gitbook/assets/image%20%2818%29.png)
+![LOLIN D1 mini pro](../.gitbook/assets/image%20%2820%29.png)
 
 Official site: [https://www.wemos.cc/en/latest/d1/d1\_mini\_pro.html](https://www.wemos.cc/en/latest/d1/d1_mini_pro.html)
 {% endtab %}
 
 {% tab title="D1 mini" %}
-![WeMos D1 mini](../.gitbook/assets/image%20%2816%29.png)
+![WeMos D1 mini](../.gitbook/assets/image%20%2818%29.png)
 
 {% hint style="warning" %}
 Retired/replaced by Lolin D1 mini
@@ -28,7 +28,7 @@ Official site: [https://www.wemos.cc/en/latest/d1/d1\_mini.html](https://www.wem
 {% endtab %}
 
 {% tab title="Compatible D1 mini" %}
-![D1 mini-compatible board](../.gitbook/assets/image%20%2817%29.png)
+![D1 mini-compatible board](../.gitbook/assets/image%20%2819%29.png)
 
 Dataset: [https://drive.google.com/open?id=1hyGhkGgUftwZsVEdMyOddPu8pWtqciLi](https://drive.google.com/open?id=1hyGhkGgUftwZsVEdMyOddPu8pWtqciLi)  
 Available on Amazon EU: [https://www.amazon.es/gp/product/B0754N794H](https://www.amazon.es/gp/product/B0754N794H)
@@ -48,41 +48,39 @@ Reboot your computer after installing the drivers
 
 ### Setup
 
-Set up your board on top of your solder-less breadboard using the female to male pins. We don't want to solder our board, so make sure all the pins make contact
-
-![](../.gitbook/assets/image%20%281%29.png)
-
-
-
-Alternative, you can do it using the male-to-male pins
-
-![](../.gitbook/assets/image%20%2812%29.png)
-
-Keep track of where the 5v, GND pins are
-
-Select a pin to use as data-out \(for example, 2\) and keep track of that one too.
-
-Connect your RGB LED using to female-to-male jumper cables.
+We're going to connect your RGB LED using to female-to-male jumper cables.
 
 {% hint style="warning" %}
 Make  sure your board is not connected to USB before doing this
 {% endhint %}
 
-Connect the RGB LED to the board using the male end of the jumper cables, making sure you respect the pins
-
-* RGB LED **ground** to board's **GND**
-* RGB LED **+5v** to board's **5v pin**
-* RGB LED **Data in** to boards' data pin \(**2** in our example\)
+First, let's connect the jumper cables to our RGB LED.
 
 [AdaFruit's NeoPixel reference](https://www.adafruit.com/product/1938)
 
 There's two main controllers for these RGB leds, APA106 and WS2812, and both use the same configuration
 
+{% hint style="info" %}
+If you're using an AdaFruit NeoPixel and you have difficulty locating the flat side, it's the one with the two longer pins
+{% endhint %}
+
 ![](../.gitbook/assets/image%20%289%29.png)
 
+When you're done, it should look like this
 
+![](../.gitbook/assets/image%20%2814%29.png)
+
+Now, let's connect the RGB LED to the board using the male end of the jumper cables, making sure you respect the pins
+
+* RGB LED **ground** to board's **GND**
+* RGB LED **+5v** to board's **5v pin**
+* RGB LED **Data in** to boards' data pin \(**D4** in our example\)
+
+When you're done, it'll look something like this,
+
+![](../.gitbook/assets/image%20%2816%29.png)
 
 ## References
 
-* wemos.cc official site for WeMos/LOLIN boards
+* [https://wemos.cc](https://wemos.cc) official site for WeMos/LOLIN boards
 
