@@ -115,23 +115,17 @@ We will use the Library Manager again to install this one
 5. Click the **Install button**
 6. Don't close the Library Manager dialog yet
 
-#### FirebaseExtended
-
-Installing this library is a bit different. We are going to download a zip with a stable release and add it to the Arduino IDE.
-
-1. Download the v0.3 release for **firebase-arduino** [here](https://github.com/FirebaseExtended/firebase-arduino/archive/v0.3.zip)
-2. Click on **Sketch › Include Library › Add .ZIP library**
-3. Select the zip you just downloaded for firebase-arduino
-
 #### Firebase ESP8266 Client
+
+We will also install this library using the Library Manager
+
+![](../.gitbook/assets/image%20%284%29.png)
 
 1. Open the Library Manager by clicking on the menu **Sketch › Include Library › Manage Libraries**
 2. Search for firebase
 3. Select **FirebaseESP8266 Client** by **Mobitz**
 4. Click the **Install button**
 5. Close the Library Manager
-
-![](../.gitbook/assets/image%20%284%29.png)
 
 #### Restart Arduino IDE
 
@@ -189,14 +183,16 @@ void loop() {
 ```
 {% endcode %}
 
-### Flash your program
+#### Flash your program
 
 * Click the **upload** button on the top bar of the Arduino IDE
 * Enjoy your blinking RGB led!
 
 ![The upload button](../.gitbook/assets/image%20%285%29.png)
 
-### The serial monitor
+### Debugging
+
+#### The serial monitor
 
 Let's take a look under the hood. Open the Serial Monitor on **Tools › Serial Monitor**
 

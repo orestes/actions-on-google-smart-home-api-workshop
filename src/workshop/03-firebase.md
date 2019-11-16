@@ -608,4 +608,5 @@ Take a note of the generated public URL for your Firebase-hosted page
 ## References
 
 * [https://github.com/FirebaseExtended/firebase-arduino](https://github.com/FirebaseExtended/firebase-arduino)
+* [https://github.com/mobizt/Firebase-ESP8266](https://github.com/mobizt/Firebase-ESP8266)
 

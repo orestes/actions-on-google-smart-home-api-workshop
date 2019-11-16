@@ -30,6 +30,7 @@ Official site: [https://www.wemos.cc/en/latest/d1/d1\_mini.html](https://www.wem
 {% tab title="Compatible D1 mini" %}
 ![D1 mini-compatible board](../.gitbook/assets/image%20%2816%29.png)
 
+Dataset: [https://drive.google.com/open?id=1hyGhkGgUftwZsVEdMyOddPu8pWtqciLi](https://drive.google.com/open?id=1hyGhkGgUftwZsVEdMyOddPu8pWtqciLi)  
 Available on Amazon EU: [https://www.amazon.es/gp/product/B0754N794H](https://www.amazon.es/gp/product/B0754N794H)
 {% endtab %}
 {% endtabs %}
