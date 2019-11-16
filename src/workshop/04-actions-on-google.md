@@ -6,7 +6,7 @@ description: Voice User Interface platform for the Google Assistant
 
 ### Setup your Actions on Google Project
 
-Navigate to https://actions.google.com
+Navigate to [https://actions.google.com](https://actions.google.com)
 
 Log in with your Google Account
 
@@ -48,7 +48,7 @@ You're done!
 
 ### All together
 
-Ask the Google Assistant to 
+Now you can ask the Google Assistant to 
 
 * Turn on  the light
 * Turn off the light

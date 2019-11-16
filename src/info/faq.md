@@ -10,9 +10,9 @@ We usually buy all the components on AliExpress or Amazon for under 10 USD/EUR i
 
 2-3 h, depending on your experience
 
-### Do I need to know how to program?
+### Do I really need to know how to program?
 
-No really, you can just copy and paste all the examples. If you already know how to code, you can use these examples as a starting point, optimizing and improving on them for your own needs and ideas
+No really, you can just copy and paste all the examples. If you already know how to code, you can use these examples as a starting point, optimising and improving on them for your own needs and ideas
 
 ### Why don't you use $framework or $library?
 

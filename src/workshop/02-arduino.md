@@ -56,6 +56,34 @@ Open the Board Manager in **Tools › Board › Boards Manager**
 
 1. Search for **esp8266**
 2. Install the boards definition
+3. Close Arduino and open it again so the board configurations are loaded
+
+#### Configure Arduino for this project
+
+Connect your board using the USB cable.
+
+* Make sure you are using the appropriate COM port under **Tools › Port**
+* Make sure you have selected the appropriate board board under **Tools › Board:**
+
+{% tabs %}
+{% tab title="LOLIN D1 mini pro" %}
+Use **LOLIN \(WEMOS\) D1 mini Pro**
+
+![LOLIN \(WEMOS\) D1 mini Pro](../.gitbook/assets/image%20%2810%29.png)
+{% endtab %}
+
+{% tab title="WeMos D1 mini" %}
+Use **WeMos D1 R1**
+
+![WeMos D1 R1](../.gitbook/assets/image%20%2819%29.png)
+{% endtab %}
+
+{% tab title="Compatible D1 mini" %}
+Use **WeMos D1 R1**
+
+![WeMos D1 R1](../.gitbook/assets/image%20%2819%29.png)
+{% endtab %}
+{% endtabs %}
 
 ### Install libraries
 
@@ -63,7 +91,7 @@ Open the Board Manager in **Tools › Board › Boards Manager**
 
 We are going to use the Library Manager to install this library
 
-![Arduino IDE Library Manager](../.gitbook/assets/image%20%288%29.png)
+![Arduino IDE Library Manager](../.gitbook/assets/image%20%289%29.png)
 
 1. Open the Library Manager by clicking on the menu **Sketch** › **Include Library** › 
 
@@ -78,7 +106,7 @@ We are going to use the Library Manager to install this library
 
 We will use the Library Manager again to install this one
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
 1. Open the Library Manager by clicking on the menu **Sketch › Include Library › Manage Libraries**
 2. Search for ArduinoJson
@@ -98,23 +126,24 @@ Installing this libary is a bit different. We are going to download a zip with a
 ### Test program
 
 Let's write a program that tests our RGB LED and its connections.  
-Open the Arduino  IDE
+First, open the Arduino  IDE
 
 
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](../.gitbook/assets/image%20%2813%29.png)
 
-Arduino programs have to functions:
+Notice that Arduino programs have at least two functions:
 
-**Setup** runs once when the device starts
+* **Setup** runs once when the device starts
+* **Loop** runs again and again, indefinitely, while the device is powered on.
 
-**Loop** runs again and again while the device is connected
+Let's copy the code below and make some magic happen
 
-{% tabs %}
-{% tab title="neopixel-test.ino" %}
+{% code title="neopixel-test.ino" %}
 ```c
 #include <Adafruit_NeoPixel.h>
 
+# This code asumes your data pin is 2. Change it if you need to
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, 2, NEO_GRB + NEO_KHZ800);
 
 void setup() {
@@ -140,31 +169,26 @@ void loop() {
     delay(500);
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ### Flash your program
 
-Connect your board using the USB cable.
-
-* Make sure you have selected the **LOLIN d1 mini pro** board under **Tools › Board** 
-* Make sure you are using the appropriate COM port under **Tools › Port** 
-* Click the **upload** button 
+* Click the **upload** button on the top bar of the Arduino Studio
 * Enjoy your blinking RGB led!
 
-Let's take a look under the hood
+![The upload button](../.gitbook/assets/image%20%284%29.png)
 
 ### The serial monitor
 
-Open the Serial Monitor on **Tools › Serial Monitor**
+Let's take a look under the hood. Open the Serial Monitor on **Tools › Serial Monitor**
 
 {% hint style="warning" %}
-Make sure the baud rate matches the one in the code
+Make sure the baud rate on this window matches the one in the code
 {% endhint %}
 
 Watch as your code runs
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%285%29.png)
 
 ## References
 

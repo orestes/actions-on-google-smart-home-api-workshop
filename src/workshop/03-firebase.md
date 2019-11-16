@@ -88,8 +88,7 @@ Initially, our database will be empty initially.
 
 We are going to create a data structure that holds the state representation for our smart light bulb. We can create the properties one by one to reflect the JSON below, or just use the **import JSON** command on the options menu
 
-{% tabs %}
-{% tab title="database.json" %}
+{% code title="database.json" %}
 ```javascript
 {
   "devices" : {
@@ -99,7 +98,7 @@ We are going to create a data structure that holds the state representation for 
         "brightness" : 100,
         "color" : {
           "hex" : "#ff0000",
-          "name" : "rojo",
+          "name" : "rouge",
           "rgb" : {
             "b" : 0,
             "g" : 0,
@@ -114,23 +113,25 @@ We are going to create a data structure that holds the state representation for 
   }
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 Once you seed the data, your database should look like this.
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![The Firebase Console](../.gitbook/assets/image%20%2818%29.png)
 
-Using the Firebase Console, you can update your data manually whenever you want.
+Using the Firebase Console on your browser, you can update your data manually whenever you want.
 
 ### Set up the database rules
 
 We need to access this data without authenticating for now, let's open our dataset for read and write access
 
+{% hint style="warning" %}
+In real-life projects, leaving our database open for read and write access would be a terrible practice. Don't do this!
+{% endhint %}
+
 Go to the rules tab and update the contents with
 
-{% tabs %}
-{% tab title="firebase-rules.json" %}
+{% code title="firebase-rules.json" %}
 ```javascript
 {
   /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
@@ -140,12 +141,11 @@ Go to the rules tab and update the contents with
   }
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 Make sure you **publish** the rules
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/image%20%2812%29.png)
 
 ## Connecting our prototype
 
@@ -155,8 +155,7 @@ Copy the following code, and make sure to **update the following settings** to m
 * WIFI\_SSID
 * WIFI\_PASSWORD
 
-{% tabs %}
-{% tab title="firebase-rg-led.ino" %}
+{% code title="firebase-rg-led.ino" %}
 ```c
 #include <FirebaseError.h>
 #include <FirebaseObject.h>
@@ -304,8 +303,7 @@ void setColor(int red, int green, int blue) {
   Serial.println(b);
 }
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 #### Test run
 
@@ -313,9 +311,9 @@ void setColor(int red, int green, int blue) {
 
 You should see your board connect to the internet and receive data from Firebase
 
-Update values in the Firebase Console and watch as your RGB led changes and your Serial Monitor shows you log traces. It's working!
+Now change some color values in the Firebase Console and watch as your RGB led changes and your Serial Monitor shows you log traces. It's working!
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%286%29.png)
 
 ## Firebase Cloud Functions
 
@@ -336,8 +334,7 @@ npm install jsonwebtoken
 
 Update the functions/index.js file with the endpoint definitions
 
-{% tabs %}
-{% tab title="functions/index.js" %}
+{% code title="functions/index.js" %}
 ```javascript
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
@@ -519,8 +516,7 @@ exports.token = functions.https.onRequest(tokenHandler);
 exports.request = functions.https.onRequest(requestHandler);
 
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 And now let's deploy our functions
 
@@ -536,8 +532,7 @@ We are going to create a simple login page that will take the parameters from Go
 
 Update the public/index.html file
 
-{% tabs %}
-{% tab title="public/index.html" %}
+{% code title="public/index.html" %}
 ```markup
 <!DOCTYPE html>
 <html lang="en">
@@ -600,8 +595,7 @@ Update the public/index.html file
 </html>
 
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 Deploy this page with 
 
