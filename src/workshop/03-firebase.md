@@ -117,7 +117,7 @@ We are going to create a data structure that holds the state representation for 
 
 Once you seed the data, your database should look like this.
 
-![The Firebase Console](../.gitbook/assets/image%20%2819%29.png)
+![The Firebase Console](../.gitbook/assets/image%20%2821%29.png)
 
 Using the Firebase Console on your browser, you can update your data manually whenever you want.
 
@@ -145,36 +145,36 @@ Go to the rules tab and update the contents with
 
 Make sure you **publish** the rules
 
+![](../.gitbook/assets/image%20%2814%29.png)
+
+#### Database secret
+
+In order to connect to our Firebase Realtime Database from our Arduino code, we'll need some basic credentials.
+
+Go to your project settings on the Firebase Console
+
+![](../.gitbook/assets/image%20%2820%29.png)
+
+From here, go to **Service Accounts** › **Database secrets**. We need to generate a new database secret and save it for our next step.
+
 ![](../.gitbook/assets/image%20%2813%29.png)
 
 ## Connecting our prototype
 
 Copy the following code, and make sure to **update the following settings** to match your Wi-Fi settings and Firebase Project.
 
-* PROJECT\_ID
+* FIREBASE\_HOST
+* FIREBASE\_AUTH
 * WIFI\_SSID
 * WIFI\_PASSWORD
 
 {% code title="firebase-rg-led.ino" %}
 ```c
+// Copyright 2019 Orestes Carracedo https://orestes.io
 //
-// Copyright 2015 Google Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-//
-
-// FirebaseDemo_ESP8266 is a sample that demo the different functions
-// of the FirebaseArduino API.
+// This work is licensed under the Creative Commons Attribution 4.0 International License.
+// To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ or
+// send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 #include <ESP8266WiFi.h> // ESP8266 dependency
 #include <FirebaseESP8266.h> // Firebase dependency
@@ -183,7 +183,7 @@ Copy the following code, and make sure to **update the following settings** to m
 // Firebase Project
 #define FIREBASE_HOST "YOUR_PROJECT_NAME_HERE.firebaseio.com"
 #define FIREBASE_AUTH "YOUR_DB_SECRET_HERE"
-#define WIFI_SSID "WIFI_HERE"
+#define WIFI_SSID "WIFI_SSID_HERE"
 #define WIFI_PASSWORD "WIFI_PASSWORD_HERE"
 
 #define DEVICE_ID "light-1"

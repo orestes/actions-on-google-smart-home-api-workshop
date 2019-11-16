@@ -12,13 +12,13 @@ These boards are compatible with Arduino, which makes them really use to work wi
 {% tab title="D1 mini pro" %}
 
 
-![LOLIN D1 mini pro](../.gitbook/assets/image%20%2817%29.png)
+![LOLIN D1 mini pro](../.gitbook/assets/image%20%2818%29.png)
 
 Official site: [https://www.wemos.cc/en/latest/d1/d1\_mini\_pro.html](https://www.wemos.cc/en/latest/d1/d1_mini_pro.html)
 {% endtab %}
 
 {% tab title="D1 mini" %}
-![WeMos D1 mini](../.gitbook/assets/image%20%2815%29.png)
+![WeMos D1 mini](../.gitbook/assets/image%20%2816%29.png)
 
 {% hint style="warning" %}
 Retired/replaced by Lolin D1 mini
@@ -28,7 +28,7 @@ Official site: [https://www.wemos.cc/en/latest/d1/d1\_mini.html](https://www.wem
 {% endtab %}
 
 {% tab title="Compatible D1 mini" %}
-![D1 mini-compatible board](../.gitbook/assets/image%20%2816%29.png)
+![D1 mini-compatible board](../.gitbook/assets/image%20%2817%29.png)
 
 Dataset: [https://drive.google.com/open?id=1hyGhkGgUftwZsVEdMyOddPu8pWtqciLi](https://drive.google.com/open?id=1hyGhkGgUftwZsVEdMyOddPu8pWtqciLi)  
 Available on Amazon EU: [https://www.amazon.es/gp/product/B0754N794H](https://www.amazon.es/gp/product/B0754N794H)

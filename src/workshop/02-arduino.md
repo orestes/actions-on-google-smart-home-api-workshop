@@ -75,13 +75,13 @@ Use **LOLIN \(WEMOS\) D1 mini Pro**
 {% tab title="WeMos D1 mini" %}
 Use **WeMos D1 R1**
 
-![WeMos D1 R1](../.gitbook/assets/image%20%2820%29.png)
+![WeMos D1 R1](../.gitbook/assets/image%20%2822%29.png)
 {% endtab %}
 
 {% tab title="Compatible D1 mini" %}
 Use **WeMos D1 R1**
 
-![WeMos D1 R1](../.gitbook/assets/image%20%2820%29.png)
+![WeMos D1 R1](../.gitbook/assets/image%20%2822%29.png)
 {% endtab %}
 {% endtabs %}
 
@@ -142,7 +142,7 @@ First, open the Arduino  IDE
 
 
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../.gitbook/assets/image%20%2815%29.png)
 
 Notice that Arduino programs have at least two functions:
 
