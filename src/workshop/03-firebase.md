@@ -63,6 +63,10 @@ Open the directory for your project with your favourite editor or IDE and you sh
 
 Open the `functions/package.json` file and add a configuration for the runtime environment
 
+{% hint style="warning" %}
+**Important!** Do not copy and paste the code below. Open the file and add the **engines** configuration for the Firebase Cloud Functions environment
+{% endhint %}
+
 ```text
 {
   "name": ...,
@@ -73,13 +77,9 @@ Open the `functions/package.json` file and add a configuration for the runtime e
 
 ```
 
-{% hint style="warning" %}
-**Important!** Do not copy and paste the code above. Open the file and add the **engines** configuration for the Firebase Cloud Functions environment
-{% endhint %}
-
 ## Real-time Database
 
-### Seed the initial data
+### Load the initial data
 
 1. In the navigation menu on the left, click on **Develop** › **Database**
 2. Choose Realtime Database. \(Firestore is not yet supported on Arduino\).
@@ -87,6 +87,8 @@ Open the `functions/package.json` file and add a configuration for the runtime e
 Initially, our database will be empty initially.
 
 We are going to create a data structure that holds the state representation for our smart light bulb. We can create the properties one by one to reflect the JSON below, or just use the **import JSON** command on the options menu
+
+Create a file named `database.json` and paste the following content. Save your file and use the **import JSON** option on the Firebase Console.
 
 {% code title="database.json" %}
 ```javascript
@@ -181,7 +183,7 @@ Copy the following code, and make sure to **update the following settings** to m
 #include <Adafruit_NeoPixel.h> // NeoPixel dependency
 
 // Firebase Project
-#define FIREBASE_HOST "YOUR_PROJECT_NAME_HERE.firebaseio.com"
+#define FIREBASE_HOST "YOUR_PROJECT_ID_HERE.firebaseio.com"
 #define FIREBASE_AUTH "YOUR_DB_SECRET_HERE"
 #define WIFI_SSID "WIFI_SSID_HERE"
 #define WIFI_PASSWORD "WIFI_PASSWORD_HERE"
@@ -387,13 +389,13 @@ We will need
 
 Let's add some dependencies to build our functions
 
-Go into the functions directory and run
+Go into the `functions` directory and run
 
 ```text
 npm install jsonwebtoken
 ```
 
-Update the functions/index.js file with the endpoint definitions
+On your IDE or code editor, update the `functions/index.js` file with the following code that contains endpoint definitions
 
 {% code title="functions/index.js" %}
 ```javascript
@@ -579,7 +581,7 @@ exports.request = functions.https.onRequest(requestHandler);
 ```
 {% endcode %}
 
-And now let's deploy our functions
+And now let's deploy our functions. Go back to your terminal/console, and from the `functions` directory, run the following command:
 
 ```text
 firebase deploy --only functions
